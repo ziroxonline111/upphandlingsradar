@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Offentliga upphandlingar, granskade varje morgon." />
+    <meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0e0c" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="Upphandlingsradarn" href="./data/feed.xml" />
+    <title>Upphandlingsradarn</title>
+    <script>
+      // Temat sätts innan första bilden ritas, så att mörkt läge inte blinkar vitt.
+      try {
+        const t = localStorage.getItem('radar.theme');
+        document.documentElement.dataset.theme = t === 'light' || t === 'dark' ? t : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      } catch {
+        document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CsZeJG3h.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-RT7fxjyR.css">
+  </head>
+  <body>
+    <!--
+      THESIS: Upphandlingsportalens beprövade form (nyckeltal, filter, tabell) gjord för ett bolag
+      med noll anställda: varje rad svarar på passar den, kan vi vinna den, hur länge till.
+      OWN-WORLD: Varmgrå arbetsyta, vita paneler med hårfina linjer, Geist i tabulära siffror,
+      en koboltblå accent, betygen A grön, B bärnsten, C skiffer. Inga dekorationer.
+      STORY: Ägarna ser vad som är nytt och vad som stänger, öppnar en rad och får skälen,
+      riskerna och vem som levererar, och tar ställning med en reaktion i Discord.
+      FIRST VIEWPORT: Rubrik och en rad klickbara nyckeltal överst, filter i vänsterkolumnen,
+      kandidattabellen tar resten. Detaljpanelen glider in från höger.
+      FORM: Standardportalen (kategorins standard, vald av beställaren), bästa hantverk i klass med
+      Linear och Stripe. Seed 60a22b46.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
+    <div id="root"></div>
+  </body>
+</html>
